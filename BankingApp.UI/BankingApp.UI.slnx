@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../BankingApp.BLL/BankingApp.BLL.csproj" Id="08deaa0b-2436-47cd-989b-b45638590b25" />
+  <Project Path="../BankingApp.DAL/BankingApp.DAL.csproj" Id="45ada0cc-d065-49bf-bfee-82c50ced0fc8" />
+  <Project Path="../BankingApp.Tests/BankingApp.Tests.csproj" Id="d0ed8244-06df-4d2d-8c74-e34939607e39" />
+  <Project Path="../ClassLibrary1/BankingApp.Models.csproj" Id="7d71ee72-0493-4bcf-a4ed-4f7e4fdd2242" />
+  <Project Path="BankingApp.UI.csproj" Id="0cd716b4-8d75-48bb-bdaf-6611c2a4e6dd" />
+</Solution>

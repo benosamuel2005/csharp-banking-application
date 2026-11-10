@@ -1,0 +1,32 @@
+﻿<Window x:Class="BankingApp.UI.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Banking Dashboard" Height="500" Width="1000">
+
+    <DockPanel>
+
+        <!-- MENU -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Logout" Click="Logout_Click"/>
+                <MenuItem Header="Exit" Click="Exit_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="Account">
+                <MenuItem Header="New Account" Click="NewAccount_Click"/>
+                <MenuItem Header="Edit Account" Click="EditAccount_Click"/>
+                <MenuItem Header="Deposit Funds" Click="Deposit_Click"/>
+                <MenuItem Header="Withdraw Funds" Click="Withdraw_Click"/>
+                <MenuItem Header="Transfer Funds" Click="Transfer_Click"/>
+                <MenuItem Header="View Transactions" Click="ViewTransactions_Click"/>
+                <MenuItem Header="Export Account to XML" Click="ExportXML_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- DATA GRID -->
+        <Grid>
+            <DataGrid Name="dgAccounts" AutoGenerateColumns="True"/>
+        </Grid>
+
+    </DockPanel>
+</Window>

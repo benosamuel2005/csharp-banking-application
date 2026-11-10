@@ -1,0 +1,60 @@
+﻿<Window x:Class="BankingApp.UI.AddAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Create Account" Height="500" Width="400">
+
+    <ScrollViewer>
+        <StackPanel Margin="20">
+
+            <TextBlock Text="First Name"/>
+            <TextBox Name="txtFirstName"/>
+
+            <TextBlock Text="Last Name"/>
+            <TextBox Name="txtLastName"/>
+
+            <TextBlock Text="Email"/>
+            <TextBox Name="txtEmail"/>
+
+            <TextBlock Text="Phone"/>
+            <TextBox Name="txtPhone"/>
+
+            <TextBlock Text="Address Line 1"/>
+            <TextBox Name="txtAddress1"/>
+
+            <TextBlock Text="Address Line 2"/>
+            <TextBox Name="txtAddress2"/>
+
+            <TextBlock Text="City"/>
+            <TextBox Name="txtCity"/>
+
+            <TextBlock Text="County"/>
+            <ComboBox Name="cmbCounty">
+                <ComboBoxItem Content="Dublin"/>
+                <ComboBoxItem Content="Cork"/>
+                <ComboBoxItem Content="Galway"/>
+                <ComboBoxItem Content="Limerick"/>
+                <ComboBoxItem Content="Waterford"/>
+            </ComboBox>
+
+            <TextBlock Text="Account Type"/>
+
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Name="rbSavings" Content="Savings" Margin="5"/>
+                <RadioButton Name="rbCurrent" Content="Current" Margin="5"/>
+            </StackPanel>
+
+
+            <TextBlock Text="Account Number (8 digits)"/>
+            <TextBox Name="txtAccountNumber"/>
+
+            <TextBlock Text="Initial Balance"/>
+            <TextBox Name="txtBalance"/>
+
+            <TextBlock Text="Overdraft Limit (Current only)"/>
+            <TextBox Name="txtOverdraft"/>
+
+            <Button Content="Create Account" Click="CreateAccount_Click" Margin="1,20,0,0"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>
